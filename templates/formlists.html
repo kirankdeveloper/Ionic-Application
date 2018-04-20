@@ -1,0 +1,13 @@
+<ion-view >
+<ion-nav-title><img class="logo" src="img/logo.png">Forms<i class="icon ion-loop icon-rt" ng-click="sync()"></i></ion-nav-title>
+<ion-content>
+<div class="" ng-repeat="formlist in formlists | filter:{ subForm : '!true' }">
+    <a class="item item-icon-left item-icon-right" href="#/app/options/{{formlist.formId}}">
+    <img class="icon form-icon" ng-src="{{bUrl}}/{{formlist.icon}}">
+    <h2>{{formlist.name}}</h2>
+    <!--<p>{{formlist.desc}}</p>-->
+    <i class="icon ion-arrow-right-c"></i>
+    </a>
+</div>
+</ion-content>
+</ion-view>

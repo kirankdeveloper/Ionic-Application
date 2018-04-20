@@ -1,0 +1,6 @@
+<div class="form-group">
+    <label for="scope" class="control-label">{{options.label || \'Select\'}} {{options.required ? \'*\' : \'\'}}</label>
+    <select multiple class="form-control" id={{id}} ng-model=value ng-required=options.required ng-disabled=options.disabled ng-init="value = options.default" ng-options="option for option in options.options">
+
+    </select>
+</div>

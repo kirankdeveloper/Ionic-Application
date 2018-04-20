@@ -1,0 +1,13 @@
+<ion-view >
+<ion-nav-title><img class="logo" src="img/logo.png">Submissions<i class="icon ion-loop icon-rt" ng-click="vm.sync()"></i></ion-nav-title>
+<ion-content>
+<ul class="list" ng-repeat="item in vm.archiveList">
+    <li class="item item-icon-right" ui-sref="app.archive({'item' : item, 'formId': vm.formId})">
+    
+    <h2>{{vm.getDate(item.when)}}</h2>
+    <!--<p>{{item.desc}}</p>-->
+    <i class="icon ion-arrow-right-c"></i>
+    </li>
+</ul>
+</ion-content>
+</ion-view>

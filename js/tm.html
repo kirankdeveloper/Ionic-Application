@@ -1,0 +1,10 @@
+<label class="item item-input item-select">
+    <span class="input-label">{{to.label}}</span>
+<select ng-options="item.value for item in options.data.data" class="form-control" ng-model="model[options.data.keys[0]]"></select>
+</label>
+<label class="item item-input item-select" ng-repeat="key in options.data.keys" ng-if="!$last">
+<span class="input-label">Select</span>
+<select ng-options="item.value for item in model[key].sub" class="form-control" ng-model="model[options.data.keys[$index + 1]]"></select>
+</label>
+<hr>
+<!--<pre ng-repeat="(key,val) in this">$scope.{{key}}={{val | json}}</pre>-->

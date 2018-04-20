@@ -1,0 +1,14 @@
+<ion-view>
+<ion-nav-title><img class="logo" ng-src="{{vm.bUrl}}/{{vm.form.icon}}">{{vm.form.name}}<span class="badge icon-right">{{vm.count}}</span></ion-nav-title>
+<ion-content>
+
+<form ng-submit="vm.onSubmit()" name="vm.subform"  >
+    <formly-form model="vm.data" fields="vm.form.fields" form="vm.subform" >
+        <label class="item">
+            <button class="button button-block button-positive" type="submit"  >Save</button>
+            
+        </label>
+    </formly-form>
+</form>
+</ion-content>
+</ion-view>

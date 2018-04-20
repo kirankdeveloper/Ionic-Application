@@ -1,0 +1,100 @@
+/* Empty. Add your own CSS if you like */
+.badge {
+    background-color: rgba(255,0,0,1);
+    color: #FFFFFF;
+    z-index: 1;
+    display: inline-block;
+    padding: 3px 8px;
+    min-width: 10px;
+    border-radius: 43px;
+    vertical-align: baseline;
+    text-align: center;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    border: 3px solid #000;
+}
+.noclick {
+    pointer-events: none;
+}
+.error-messages {
+    position: relative;
+}
+
+.error-messages, .message {
+    opacity: 1;
+    transition: .3s linear all;
+}
+
+.message {
+    font-size: .8em;
+    position: absolute;
+    width: 100%;
+    color: #a94442;
+    margin-top: 2px;
+    z-index: 2000;
+}
+
+.error-messages.ng-enter.ng-enter-active, .message.ng-enter.ng-enter-active {
+    opacity: 1;
+    top: 0;
+}
+
+.error-messages.ng-enter, .message.ng-enter {
+    opacity: 0;
+    top: -10px;
+}
+
+.error-messages.ng-leave, .message.ng-leave {
+    opacity: 1;
+    top: 0;
+}
+
+.error-messages.ng-leave-active, .message.ng-leave-active {
+    opacity: 0;
+    top: -10px;
+}
+
+.overflow-scroll {
+    overflow-y: auto;
+}
+
+#signatureCanvas {
+    width: 100%;
+    font-size: 10px;
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.27), 0 0 40px rgba(0, 0, 0, 0.08) inset;
+    border-radius: 4px;
+}
+
+.form-icon {
+    max-width: 30px;
+    max-height: 30px;
+    top: 11px!important;
+}
+
+.logo {
+        max-height: 36px;
+    padding-top: 5px;
+    float: left;
+}
+
+.icon-rt {
+    float: right;
+}
+
+.item button {
+  /*width:100%;*/
+}
+.item-stacked-label {
+    padding-right: 16px;
+}
+.button-bar {
+    padding: 55px 22px;
+}
+.formly-field img {
+    width: 100%;
+    padding: 16px;
+}
